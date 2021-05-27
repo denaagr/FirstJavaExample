@@ -5,27 +5,34 @@ import java.util.Scanner;
 public class assign {
 
     public static void main(String[] args){
-        System.out.println("Hello");
-        String name="Dena";
-        System.out.println(name);
-        System.out.println("------------------------");
+        int first, second, add, mul , sub;
+        double div;
 
         Scanner scan=new Scanner(System.in);
-        System.out.println("write any year:");
-        int year;
-        year=scan.nextInt();
-        boolean leap=false;
-        if (year%4==0){
-            if (year%100==0){
-                if(year%400==0)
-                    leap=true;
-            }else
-                leap=false;
-        }
-        if(leap==true)
-            System.out.println(year +" is leap");
-        else
-            System.out.println(year +" is not leap");
+        System.out.println("Enter the first number:");
+        first= scan.nextInt();
+        System.out.println("Enter the second number:");
+        second= scan.nextInt();
+
+        add=first+second;
+        System.out.println("result:");
+        System.out.println(first+"+"+second+"="+add);
+
+        mul=first*second;
+        System.out.println(first+"*"+second+"="+mul);
+
+        div=first/second;
+        System.out.println(first+"/"+second+"="+div);
+
+        sub=first-second;
+        System.out.println(first+"-"+second+"="+sub);
+
+
+
+
+
+
+
 
 
 
