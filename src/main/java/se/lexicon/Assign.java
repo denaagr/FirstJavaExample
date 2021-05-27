@@ -7,20 +7,27 @@ public class Assign {
     // methods - behaviors
 
     public static void main(String[] args) {
-        System.out.println("for addition press 'ad', for subtraction press 's', for division press 'd',for multiplication press 'm'");
+        System.out.println("Wellcome to the calculator");
+        System.out.println("for addition press 'ad', for subtraction press 's'");
+        System.out.println("for division press 'd',for multiplication press 'm'");
+        System.out.println("press no to end");
         Scanner scan = new Scanner(System.in);
         String press=scan.nextLine();
-        if (press=="ad") {
+        if ("ad".equals(press)) {
             addition();
         }
-        if (press=="s") {
+        if ("s".equals(press)) {
             subtraction();
         }
-        if (press=="d") {
+        if ("d".equals(press)) {
             division();
         }
-        if (press=="m") {
+        if ("m".equals(press)) {
             multiplication();
+        }
+        if("No".equals(press)){
+            System.out.println("Bye");
+
         }
         }
 
@@ -32,6 +39,7 @@ public class Assign {
         int b = scan.nextInt();
         int sum = a + b;
         System.out.println(a + "+" + b + "=" + sum);
+
     }
 
     public static void subtraction() {
