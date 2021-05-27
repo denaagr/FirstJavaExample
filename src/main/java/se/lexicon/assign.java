@@ -5,27 +5,18 @@ import java.util.Scanner;
 public class assign {
 
     public static void main(String[] args){
-        int first, second, add, mul , sub;
-        double div;
-
+        int a,b,c,average;
         Scanner scan=new Scanner(System.in);
-        System.out.println("Enter the first number:");
-        first= scan.nextInt();
-        System.out.println("Enter the second number:");
-        second= scan.nextInt();
+        System.out.println("Enter three number:");
+        a= scan.nextInt();
+        b= scan.nextInt();
+        c= scan.nextInt();
+        average=(a+b+c)/3;
+        System.out.println("("+a+"+"+b+"+"+c+")"+"="+average);
 
-        add=first+second;
-        System.out.println("result:");
-        System.out.println(first+"+"+second+"="+add);
 
-        mul=first*second;
-        System.out.println(first+"*"+second+"="+mul);
 
-        div=first/second;
-        System.out.println(first+"/"+second+"="+div);
 
-        sub=first-second;
-        System.out.println(first+"-"+second+"="+sub);
 
 
 
