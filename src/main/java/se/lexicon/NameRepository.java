@@ -21,9 +21,9 @@ public class NameRepository {
         //find("Dena Aghajari");
         //findAll(names);
 
-       String fullName="ali bj";
-       add(fullName);
-        System.out.println(Arrays.toString(names));
+//       String fullName="ali bj";
+//       add(fullName);
+//        System.out.println(Arrays.toString(names));
 
 //      System.out.println(Arrays.toString(names));
 //       boolean updateResult=update("Erik Svensson", "shadi kh");
@@ -46,23 +46,23 @@ public class NameRepository {
 //
 //      }
 
-      public static boolean add(final String fullName) {
-
-          // Checking if name exists.
-          for (String name : names) {
-              if (name == fullName) {
-                  return false;
-              }
-          }
-
-          //Adding the non existing name.
-          String[] copy = Arrays.copyOf(names, names.length + 1);
-          copy[copy.length - 1] = fullName;
-          names = copy;
-
-          return true;
-      }
-
+//      public static boolean add(final String fullName) {
+//
+//          // Checking if name exists.
+//          for (String name : names) {
+//              if (name == fullName) {
+//                  return false;
+//              }
+//          }
+//
+//          //Adding the non existing name.
+//          String[] copy = Arrays.copyOf(names, names.length + 1);
+//          copy[copy.length - 1] = fullName;
+//          names = copy;
+//
+//          return true;
+//      }
+//
 
      /*
       public static String[] findAll(String[] names){
