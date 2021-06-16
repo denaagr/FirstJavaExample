@@ -23,6 +23,10 @@ public class BankAccount {
     public void withdraw(double amount){
         balance-=amount;
     }
+    //con4
+    public BankAccount(){
+
+    }
 
     public void setAccountNumber(int accountNumber){
         this.accountNumber=accountNumber;
